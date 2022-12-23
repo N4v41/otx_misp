@@ -126,7 +126,7 @@ def main(args=None):
     try:
         config = Configuration(args)
     except Exception as ex:
-        log.error(ex.message)
+        log.error(ex)
         sys.exit(5)
 
     try:
